@@ -1,0 +1,44 @@
+{
+  "name": "zhaopin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "prepublishOnly": "npm run eslint && npm run stylelint && rm ./dist/* && npm run build"
+  },
+  "dependencies": {
+    "@firstfleet/hyperappcomponents": "^1.0.25",
+    "antd": "^3.19.2",
+    "http-proxy": "^1.17.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.7",
+    "nedb": "^1.8.0",
+    "pm2": "^3.5.1",
+    "puppeteer": "^1.18.0",
+    "request": "^2.88.0",
+    "ws": "^7.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.2.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.12.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.5.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "osjs": {
+    "type": "package"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "zhaopin",
+  "icon": "icon.png",
+  "category": null,
+  "server": "server.js",
+  "title": {
+    "en_EN": "zhaopin"
+  },
+  "description": {
+    "en_EN": "zhaopin"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}
